@@ -2,7 +2,7 @@ package com.project.consult.persistence.entity;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "user")
@@ -17,6 +17,6 @@ public class UserEntity {
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
-    @Column(name = "date_agregado")
-    private Date dtAgregado;
+    @Column(name = "fecha")
+    private LocalDateTime fecha;
 }
