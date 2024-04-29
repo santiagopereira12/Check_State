@@ -13,4 +13,8 @@ public class StateEntity {
     private Integer idUser;
     @Column(name = "state")
     private boolean state;
+
+    @OneToOne
+    @JoinColumn(name = "id_user",referencedColumnName = "id", insertable = false, updatable = false)
+    private UserEntity user;
 }
